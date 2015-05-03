@@ -1,4 +1,3 @@
-
 #Read the Train and Test files
 Train = read.csv("NYTimesBlogTrain.csv", stringsAsFactors=FALSE)
 Test = read.csv("NYTimesBlogTest.csv", stringsAsFactors=FALSE)
