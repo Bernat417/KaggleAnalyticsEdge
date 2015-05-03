@@ -3,7 +3,7 @@
 Train = read.csv("NYTimesBlogTrain.csv", stringsAsFactors=FALSE)
 Test = read.csv("NYTimesBlogTest.csv", stringsAsFactors=FALSE)
 
-#Generate the Linear Regresion and predict the results
+#Generate the Linear Regresion based on the number of words of the article and predict the results
 SimpleLR = glm(Popular ~ WordCount, data=Train, family=binomial)
 Prediction = predict(SimpleLR, newdata=Test, type="response")
 
